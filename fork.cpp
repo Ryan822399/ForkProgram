@@ -93,7 +93,7 @@ int main() {
 				cout << "The amount of strings replaced by the process was: " << (stringsReplaced) << endl;
 
 				//debug or possible output statement to show the text document after string replacement
-				cout << "The new document looks like: /n" << textDocument << endl; 
+				cout << "The new document looks like: " << textDocument << endl; 
 				exit(0);
 			}
 
@@ -109,6 +109,10 @@ int main() {
 				cout << "Error creating child process, returning to initial prompt" << endl;	
 			}
 
+		}
+		else
+		{
+			exit(0);
 		}
 	}
 
